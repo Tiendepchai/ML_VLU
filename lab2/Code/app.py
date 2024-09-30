@@ -22,9 +22,9 @@ Bernoulli, Multinomial = BernoulliNB(), MultinomialNB()
 Bernoulli.fit(X_train_vect, y_train)
 Multinomial.fit(X_train_vect, y_train)
 
-title = st.text_input("Tôi sẽ phân tích tâm trạng của bạn ")
+title = st.text_input("Tôi sẽ phân tích tâm trạng của bạn ", "0")
 
 user = vectorizer.transform(np.array([title]))
 ans = Bernoulli.predict(user)
 
-st.write("Tâm trạng của bạn là", "TOT" if ans == "positive" else "KO TOT")
+st.write("Tâm trạng của bạn là", "TOT" if ans == "positive" else ("KO TOT" if title == "" else ""))
