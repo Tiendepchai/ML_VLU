@@ -27,4 +27,4 @@ title = st.text_input("Tôi sẽ phân tích tâm trạng của bạn ", "0")
 user = vectorizer.transform(np.array([title]))
 ans = Bernoulli.predict(user)
 
-st.write("Tâm trạng của bạn là", "TOT" if ans == "positive" else ("KO TOT" if title == "" else ""))
+st.write("Tâm trạng của bạn là", "tốt" if ans == "positive" else "không tốt")
