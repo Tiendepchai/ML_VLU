@@ -4,7 +4,6 @@ pandas, numpy, python 3.12.5, pytorch, torchvision, torchnn, mathplotlib
 ``
 # 2. Thuat toan
 ``
-MLP Thai Anh
-Thai Anh Neural Network
+MLP Thai Anh, Thai Anh Neural Network
 ``
 # >.<
